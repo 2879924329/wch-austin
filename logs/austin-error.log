@@ -1,0 +1,74 @@
+2022-06-15 21:13:45.113 [main] ERROR org.springframework.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.AppenderAction - Could not create an Appender of type [de.siegmar.logbackgelf.GelfUdpAppender]. ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type de.siegmar.logbackgelf.GelfUdpAppender
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@76:74 - ActionException in Action for tag [appender] ch.qos.logback.core.joran.spi.ActionException: ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type de.siegmar.logbackgelf.GelfUdpAppender
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [GELF]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:328)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:282)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:240)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:216)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:82)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:63)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:117)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:111)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:62)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:374)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:332)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at com.wch.austin.AustinApplication.main(AustinApplication.java:14)
+Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.AppenderAction - Could not create an Appender of type [de.siegmar.logbackgelf.GelfUdpAppender]. ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type de.siegmar.logbackgelf.GelfUdpAppender
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@76:74 - ActionException in Action for tag [appender] ch.qos.logback.core.joran.spi.ActionException: ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type de.siegmar.logbackgelf.GelfUdpAppender
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [GELF]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:179)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.reinitialize(LogbackLoggingSystem.java:232)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:73)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:132)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:313)
+	... 18 common frames omitted
+2022-06-15 21:14:42.410 [main] ERROR org.springframework.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.AppenderAction - Could not create an Appender of type [de.siegmar.logbackgelf.GelfUdpAppender]. ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type de.siegmar.logbackgelf.GelfUdpAppender
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@76:74 - ActionException in Action for tag [appender] ch.qos.logback.core.joran.spi.ActionException: ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type de.siegmar.logbackgelf.GelfUdpAppender
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [GELF]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:328)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:282)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:240)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:216)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:82)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:63)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:117)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:111)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:62)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:374)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:332)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at com.wch.austin.AustinApplication.main(AustinApplication.java:14)
+Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.AppenderAction - Could not create an Appender of type [de.siegmar.logbackgelf.GelfUdpAppender]. ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type de.siegmar.logbackgelf.GelfUdpAppender
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@76:74 - ActionException in Action for tag [appender] ch.qos.logback.core.joran.spi.ActionException: ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type de.siegmar.logbackgelf.GelfUdpAppender
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [GELF]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:179)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.reinitialize(LogbackLoggingSystem.java:232)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:73)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:132)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:313)
+	... 18 common frames omitted

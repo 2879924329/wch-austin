@@ -1,0 +1,9 @@
+# Project exclude paths
+/austin-common/target/
+/austin-cron/target/
+/austin-handler/target/
+/austin-service-api/target/
+/austin-service-api-impl/target/
+/austin-stream/target/
+/austin-support/target/
+/austin-web/target/

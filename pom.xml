@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.wch</groupId>
+    <artifactId>wch-austin</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>austin-web</module>
+        <module>austin-common</module>
+        <module>austin-support</module>
+        <module>austin-service-api</module>
+        <module>austin-service-api-impl</module>
+        <module>austin-handler</module>
+        <module>austin-stream</module>
+        <module>austin-cron</module>
+    </modules>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.5.6</version>
+        <relativePath/>
+    </parent>
+    <properties>
+        <java.version>1.8</java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <flink.version>1.14.3</flink.version>
+        <target.java.version>1.8</target.java.version>
+        <scala.binary.version>2.11</scala.binary.version>
+        <maven.compiler.source>${target.java.version}</maven.compiler.source>
+        <maven.compiler.target>${target.java.version}</maven.compiler.target>
+        <log4j.version>2.17.1</log4j.version>
+        <weixin-java>4.3.0</weixin-java>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <!--mysql驱动包-->
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>8.0.23</version>
+            </dependency>
+
+
+            <!--hutool工具包-->
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-all</artifactId>
+                <version>5.7.15</version>
+            </dependency>
+
+            <!--guava工具包-->
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>31.0.1-jre</version>
+            </dependency>
+
+            <!--common工具包-->
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-collections4</artifactId>
+                <version>4.4</version>
+            </dependency>
+
+            <!--http库-->
+            <dependency>
+                <groupId>com.squareup.okhttp3</groupId>
+                <artifactId>okhttp</artifactId>
+                <version>4.9.2</version>
+            </dependency>
+
+            <!--fastjson包-->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>1.2.78</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <excludes>
+                        <exclude>
+                            <groupId>org.projectlombok</groupId>
+                            <artifactId>lombok</artifactId>
+                        </exclude>
+                    </excludes>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
